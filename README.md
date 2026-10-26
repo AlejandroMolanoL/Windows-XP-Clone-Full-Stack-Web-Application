@@ -183,6 +183,11 @@ Este método levanta **todo el stack** (Frontend, Backend y Base de Datos) con u
      ```bash
      docker compose down
      ```
+5. **Para iniciarlos después de detenerlos:**
+   ```bash
+   docker compose up
+   ```
+
 
 > 🌟 **Ventaja del `entrypoint.sh`:**  
 > Los archivos de código están montados como volúmenes (`./client:/app` y `./server:/app`). Cualquier cambio que hagas en tu editor se reflejará al instante gracias al HMR de Vite y Nodemon, sin necesidad de reiniciar Docker.
