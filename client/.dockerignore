@@ -1,0 +1,11 @@
+# client/.dockerignore
+node_modules
+.git
+dist
+
+# ------------------
+# Yarn Plug'n'Play files
+.pnp.cjs
+.pnp.loader.mjs
+.yarn
+# ------------------

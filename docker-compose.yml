@@ -1,0 +1,37 @@
+# docker-compose.yml
+# version: '3.8'
+
+services:
+  server:
+    build: ./server
+    ports:
+      - "5000:5000"
+    volumes:
+      # SOLO dejamos el volumen del código.
+      # Ya no necesitamos proteger node_modules o .yarn
+      # porque el entrypoint.sh los repara al inicio.
+      - ./server:/app
+    depends_on:
+      - db
+    environment:
+      - MONGO_URL=mongodb://db:27017/windowsxp
+
+  client:
+    build: ./client
+    ports:
+      - "5173:5173"
+    volumes:
+      # IGUAL AQUÍ: solo dejamos el volumen del código.
+      - ./client:/app
+    stdin_open: true
+    tty: true
+
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
