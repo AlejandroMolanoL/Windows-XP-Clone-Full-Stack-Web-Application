@@ -1,0 +1,9 @@
+# server/.dockerignore
+node_modules
+.git
+
+# ------------------
+# Yarn v2/v3 files
+.pnp.loader.mjs
+.yarn
+# ------------------
