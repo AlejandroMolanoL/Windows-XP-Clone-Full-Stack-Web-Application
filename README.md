@@ -1,5 +1,7 @@
 # 🪟 Windows XP Clone — Full Stack Web Application
 
+<img width="1917" height="945" alt="XPproyect" src="https://github.com/user-attachments/assets/d4cc1dce-b228-49a7-829d-a10307202ca4" />
+
 > **Una recreación fiel, nostálgica y moderna del legendario sistema operativo Windows XP (Luna Blue) para la web.**
 
 Este proyecto es un monorepo / arquitectura multi-servicio que emula la experiencia visual y funcional de **Windows XP**. Combina un cliente interactivo construido con **React 19**, **TypeScript** y **Vite**, un backend API con **Node.js**, **Express 5** y **MongoDB**, todo orquestado mediante **Docker & Docker Compose** para un despliegue y desarrollo inmediato con un solo comando.
